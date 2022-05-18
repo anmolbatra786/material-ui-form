@@ -8,16 +8,25 @@ import Page2 from "./page2";
 
 const Page1 = () => {
 
+    const form_main = {
+        margin: "auto",
+        boxShadow: "0px 0px 5px #f3eaea",
+        padding: "30px"
+    }
+    const inputs = {
+        position: "relative",
+        marginBottom: "20px"
+    }
+
 
     return (
-        <div className="form_main">
+        <div style={{ form_main }}>
             <FormControl fullWidth>
-                <div className="inputs">
+                <div style={{ inputs }}>
                     <InputLabel id="selected">Select One</InputLabel>
                     <Select
                         labelId="selected"
                         id="select"
-                        className="styleUI"
                         label="Select One"
                     >
                         <MenuItem value={"and"}>And</MenuItem>
@@ -28,12 +37,11 @@ const Page1 = () => {
             </FormControl>
 
             <FormControl fullWidth>
-                <div className="inputs">
+                <div style={{ inputs }}>
                     <InputLabel id="selected">Select One</InputLabel>
                     <Select
                         labelId="selected"
                         id="select"
-                        className="styleUI"
                         label="Select One"
                     >
                         <MenuItem value={"and"}>IP Address</MenuItem>
@@ -48,7 +56,7 @@ const Page1 = () => {
                     </Select>
                 </div>
             </FormControl>
-         
+
 
             <div>
                 <Button variant="outlined" disabled>
